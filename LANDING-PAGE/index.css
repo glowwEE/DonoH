@@ -1,0 +1,20 @@
+#head_jumbotron {
+  background-image: url("/landing\ pix.jpg");
+  height: 400px;
+  padding-top: 20px;
+  /* background-repeat: no-repeat; */
+}
+/* #head_jumbotron_inner_div {
+  border-style: solid;
+  border-color: #fff;
+  border-width: 8px;
+  color: slategrey;
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.img {
+  height: 300px;
+} */

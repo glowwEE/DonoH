@@ -1,0 +1,17 @@
+.adminNav{
+  width: 70% !important;
+  height:70px !important;
+  border-bottom: 1px solid black !important;
+  
+}
+.sidey{
+    margin-top:-60px !important;
+    top: 0px !important;
+    bottom: 0px !important;
+    position: absolute !important;
+    border-right: 1px solid black !important;
+    
+}
+/* .asidey{
+    height: 100% !important;
+} */

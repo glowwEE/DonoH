@@ -12,6 +12,23 @@
     border-right: 1px solid black !important;
     
 }
+
+.circle {
+  border: 2px solid red;
+  width: 390px !important;
+  height: 75px !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  /* align-content: center !important;  */
+}
+.transparent{
+  background-image: url(/register/signup/images/background.png);
+}
+.botn{
+  margin-left: 180px !important;
+}
 /* .asidey{
     height: 100% !important;
 } */

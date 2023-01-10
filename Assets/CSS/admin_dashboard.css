@@ -29,6 +29,14 @@
 .botn{
   margin-left: 180px !important;
 }
+.up{
+  background-image:url(/register/signup/images/threehands.png);
+  height: 400px;
+}
+.boda{
+  background-color: #eceaea;
+  /* border-width: 10px !important; */
+}
 /* .asidey{
     height: 100% !important;
 } */

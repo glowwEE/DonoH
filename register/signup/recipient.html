@@ -1,101 +1,518 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Glory okafor, Onwuli Valentina, Ejibode Ibraheem, Francisca Chukwuka">
-  <meta name="desription" content="Glory okafor, Onwuli Valentina, Ejibode Ibraheem, Francisca Chukwuka">
-  <meta name="keyword" content="health,medical,donation,html,css,javascript">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="author"
+      content="Glory okafor, Onwuli Valentina, Ejibode Ibraheem, Francisca Chukwuka"
+    />
+    <meta
+      name="desription"
+      content="Glory okafor, Onwuli Valentina, Ejibode Ibraheem, Francisca Chukwuka"
+    />
+    <meta
+      name="keyword"
+      content="health,medical,donation,html,css,javascript"
+    />
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=
-  , initial-scale=1.0">
-  <title>DonoH Web App</title>
-  <link rel="stylesheet" type="text/css" href="/Assets/CSS/admin_dashboard.css"  > 
-  <link rel="icon" href="/register/signup/images/logo.jpeg"> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  
-</head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+  , initial-scale=1.0"
+    />
+    <title>About Us page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Assets/CSS/index.css" />
+    <link rel="stylesheet" href="/Assets/CSS/blog.css">
+    <link rel="icon" href="/Assets/images/logo.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+    <main class="w-100 min-vh-100">
+      <!-- fixed nav -->
+      <section class="w-100 fixed-top bg-white">
+        <nav class="navbar navbar-expand-lg w-90 mx-auto">
+          <div
+            class="w-100 d-lg-flex justify-content-lg-between align-items-lg-center"
+          >
+            <!-- logo and hamburger -->
+            <section
+              class="logo-hamburger d-flex align-items-center justify-content-between"
+            >
+              <div class="w-img">
+                <a
+                  href="/"
+                  class="navbar-brand"
+                  style="width: 100%; height: 100%"
+                >
+                  <img
+                    src="/Assets/images/donohh.png"
+                    alt="logo"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
 
-<body>
-  <div class="container-lg">
-    <div class="card mt-2 border border-0 mb-5 bg-transparent" >
-     <nav class="navbar navbar-expand-lg ">
-        <div class="container-lg ">
-          <a class="navbar-brand" href="#">
-            <img src="/register/signup/images/logo.jpeg" alt="logo" class="img-fluid rounded-circle my-4 p-1 d-none d-md-block shadow w-50 ms-5  logo"/>
-            <!-- <img src="/register/signup/images/logo.jpeg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"> -->
-          </a>         
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+              >
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-5">
-                  <a class="nav-link me-4" aria-current="page" href="#">Home</a>
-                  <a class="nav-link me-4" href="#">About Us</a>
-                  <a class="nav-link me-4" href="#">Contact Us</a>
-                  <a class="nav-link me-4" href="#">Blog</a>
-                  <a class="nav-link me-4" href="#">Privacy</a>
-                </div>
-                <div class="botn">
-                 <button type="button" class="btn btn-outline-danger  ">Sign in</button>
-                 <button type="button" class="btn btn-danger ">Sign up</button>
-                </div> 
-              </div>
-             
-            </div>      
-        </div>               
-      </nav>
-    <div class="card mt-5 border rounded-start" >  
-      <div class="row g-0">
-      <div class="col-md-6">
-        <img src="/register/signup/images/hands.jpeg" class="img-fluid rounded-start w-100 h-100" alt="...">
-      </div>
-      <div class="col-md-6">
-        <div class="card-body">
-          <div class="row g-3 ">
-            <div class="col">
-              <label for="Firstname" class="form-label">First Name</label>
-              <input type="text" class="form-control" placeholder="Type here" aria-label="First name">
-            </div>
-            <div class="col">
-              <label for="Lastname" class="form-label">Last Name</label>
-              <input type="text" class="form-control" placeholder="Type here" aria-label="Last name">
-            </div>
-            <div class="col-md-12">
-              <label for="inputEmail4" class="form-label">Email</label>
-              <input type="email" class="form-control" placeholder="Type here" id="inputEmail4">
-            </div>
-            <div class="col-md-12">
-              <label for="Password" class="form-label">Password</label>
-              <input type="password" class="form-control" placeholder="Type here" id="Password">
-            </div>
-            <div class="col-md-12">
-              <label for="confirmPassword4" class="form-label">Password</label>
-              <input type="password" class="form-control" placeholder="Type here"id="confirmPassword">
-            </div>
-            <div class="mb-3">
-              <label for="Textarea" class="form-label">Recipient's Need for Funds</label>
-              <textarea class="form-control" placeholder="Type here"placeholder="Type here" id="Textarea" rows="5"></textarea>
-            </div>
-          </div>
-          <div class="d-grid gap-2 col-6 mx-auto mt-3 border border-0 ">
-            <button type="button" class="btn btn-danger rounded-0">Get Started</button>
-            <div class= "card-text mb-2 mt-4" style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center">
-              <span class="fs-5 p-3 text-muted" style="background-color: #F3F5F6;">
-                or 
-              </span>
-            </div>
-            <div class="d-flex flex-row ">
-              <img src="data:image/png;base64,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" class="img-fluid float-md-start mt-3 mx-auto me-3 " style="height: 30px"  alt="Google Logo">
-              <p class="mt-3 mx-auto ms-0 ">Sign in with Google</p>                  
-            </div>
-          </div>
-          <p class="card-text text-center mt-1"><small class="text-center">Already have an account? <b>Sign in</b></small></p> 
+            </section>
 
+            <!-- off canvas -->
+
+            <section
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div
+                class="offcanvas-header d-flex d-lg-none justify-content-end"
+              >
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div
+                class="offcanvas-body w-custom-75 d-lg-flex justify-content-lg-end align-self-lg-end"
+              >
+                <div class="navigation-wrapper d-lg-flex w-100">
+                  <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active-link text-capitalize"
+                        aria-current="page"
+                        href="/"
+                        >home</a
+                      >
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link text-capitalize" href="/AboutSection/About.html">about us</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link text-capitalize" href="/contact-us/contact.html"
+                        >contact us</a
+                      >
+                    </li>
+
+                    <li class="nav-item">
+                      <a
+                        class="nav-link text-capitalize"
+                        href="/blog_section/blog.html"
+                        >blog</a
+                      >
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link text-capitalize" href="/privacy_page/privacy.html">privacy</a>
+                    </li>
+                  </ul>
+
+                  <section
+                    class="button-wrapper justify-content-between d-lg-flex"
+                  >
+                    <div
+                      class="btn-1-wrapper border border-1 overflow-hidden mb-4 mb-lg-0"
+                    >
+                      <button class="btn w-100 h-100">
+                        <a class="nav-link text-capitalize" href="#">sign in</a>
+                      </button>
+                    </div>
+
+                    <div
+                      class="btn-2-wrapper bg-active-btn border border-1 overflow-hidden"
+                    >
+                      <button class="btn w-100 h-100">
+                        <a class="nav-link text-capitalize" href="#">sign up</a>
+                      </button>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </section>
+          </div>
+        </nav>
+      </section>
+      
+      <section class="card mt-5 border rounded-start topStory" >
+        <div class="row g-0">
+
+
+          <div class="col-md-6">
+            <div class="card-body border rounded-start">
+              <div class="row g-3 ">
+                <div class="col">
+                  <label for="Firstname" class="form-label">First Name</label>
+                  <input type="text" class="form-control" placeholder="Type here" aria-label="First name">
+                </div> 
+
+                <div class="col">
+                    <label for="Lastname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" placeholder="Type here" aria-label="Last name">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" placeholder="Type here" id="inputEmail4">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="Password" class="form-label">Password</label>
+                  <input type="password" class="form-control" placeholder="Type here" id="Password">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="confirmPassword4" class="form-label">Password</label>
+                  <input type="password" class="form-control" placeholder="Type here"id="confirmPassword">
+                </div>
+
+                <div class="mb-3">
+                  <label for="Textarea" class="form-label">Recipient's Requirements to Release Fund</label>
+                  <textarea class="form-control" placeholder="Type here" id="Textarea" rows="5"></textarea>
+                </div>
+
+                </div>
+
+                <div class="d-grid gap-2 col-6 mx-auto mt-3 border border-0 ">
+                  <button type="button" class="btn btn-danger rounded-0">Get Started</button>
+                  <div class= "card-text mb-2 mt-4" style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center">
+                    <span class="fs-5 p-3 text-muted" style="background-color: #F3F5F6;">
+                      or 
+                    </span>
+                  </div>
+                  <div class="d-flex flex-row ">
+                    <img src="data:image/png;base64,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" class="img-fluid float-md-start mt-3 mx-auto me-3 " style="height: 30px"  alt="Google Logo">
+                    <p class="mt-3 mx-auto ms-0 ">Sign in with Google</p>                  
+                  </div>
+                </div>
+
+                <p class="card-text text-center mt-3"><small class="text-center">Already have an account? <b>Sign in</b></small></p> 
+
+
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="imgHandContainer">
+              <img src="/register/signup/images/hands.jpeg" alt="hands" class="img-fluid rounded-start w-100 h-100">
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>     
-</body> 
+      </section>
+    </main>
+
+
+    <footer class="bg-light-blue w-100 py-3 mt-4">
+      <section class="w-90 mx-auto text-white pt-5">
+        <h2 class="text-center w-100" style="font-weight: 500">
+          It is through giving that we live
+        </h2>
+        <h2 class="text-center w-100" style="font-weight: 500">
+          save a life today.
+        </h2>
+
+        <!-- btns -->
+        <div
+          class="btns mt-4 d-md-flex mx-auto justify-content-between align-items-center mb-4"
+        >
+          <div
+            class="btn-wrapper-2 border border-2 border-white bg-transparent mx-auto mt-4"
+          >
+            <a
+              href="#"
+              class="d-flex w-100 h-100 justify-content-center align-items-center text-decoration-none text-white text-capitalize"
+              style="font-size: 14px; font-weight: 500"
+              >seek&nbsp;<span class="text-lowercase">for&nbsp;</span> aid</a
+            >
+          </div>
+          <div class="btn-wrapper-2 bg-white mx-auto mt-4">
+            <a
+              href="#"
+              class="d-flex w-100 h-100 justify-content-center align-items-center text-decoration-none blue-span text-capitalize"
+              style="font-size: 14px; font-weight: 500"
+              >donate</a
+            >
+          </div>
+        </div>
+
+        <!-- footer navigation / quick links -->
+        <nav class="navbar mt-5 row mx-auto w-90 pt-4">
+          <div
+            class="nav-contents mt-4 col-sm-6 col-lg-3"
+            style="min-height: 278px"
+          >
+            <h5 class="text-white text-uppercase">navigation</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="/"
+                  >home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >about us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >contact us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="./blog_section/blog.html"
+                  >blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >donate</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="nav-contents mt-4 col-sm-6 col-lg-3"
+            style="min-height: 278px"
+          >
+            <h5 class="text-white text-uppercase">what we do</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >Supporting the sick
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >Strengthening Advocacy</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >Sharing Information</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >Building Leadership</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >Shining a Light</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="nav-contents mt-4 col-sm-6 col-lg-3"
+            style="min-height: 278px"
+          >
+            <h5 class="text-white text-uppercase">legal</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >general info</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >privacy policy</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >terms of service</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="nav-contents mt-4 col-sm-6 col-lg-3"
+            style="min-height: 278px"
+          >
+            <h5 class="text-white text-uppercase">talk to us</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="mailto:support@donoh.com"
+                  >support@donoh.com</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="tel:+2348129345495"
+                  >+(234)-812-9345-495</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >contact us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >Facebook</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >Linkedin</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >Twitter</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div
+          class="w-90 mx-auto my-5"
+          style="height: 2px; background-color: rgba(255, 255, 255, 0.3)"
+        ></div>
+
+        <section class="row mx-auto w-90 mt-1 py-1 justify-content-center">
+          <div class="w-50-custom col-sm-6 col-lg-4">
+            <figure class="m-0 p-0 white-logo">
+              <img
+                src="./Assets/images/DONOH-white.svg"
+                alt="donoh"
+                class="w-100 h-100"
+              />
+            </figure>
+          </div>
+
+          <div
+            class="col-sm-6 col-lg-4 d-flex align-items-end w-50-custom justify-content-sm-end justify-content-lg-center"
+          >
+            <p
+              class="text-white text-capitalize mb-0 w-100 text-sm-end font-sm"
+            >
+              © 2023 DonoH . All Rights Reserved.
+            </p>
+          </div>
+
+          <div
+            class="col-sm-6 mt-sm-4 mt-lg-0 col-lg-4 d-flex align-items-end justify-content-between justify-content-lg-end w-50-custom"
+          >
+            <a
+              href="#"
+              class="custom-a me-lg-3 text-white d-flex justify-content-center align-items-center text-decoration-none"
+            >
+              <i class="fab fa-facebook-f"></i></a
+            ><a
+              href="#"
+              class="custom-a me-lg-3 text-white d-flex justify-content-center align-items-center text-decoration-none"
+            >
+              <i class="fab fa-linkedin-in"></i></a
+            ><a
+              href="#"
+              class="custom-a text-white d-flex justify-content-center align-items-center text-decoration-none"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </section>
+      </section>
+    </footer>
+
+  </body>
+</html>

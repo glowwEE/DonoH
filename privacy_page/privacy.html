@@ -2,130 +2,500 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="author" content="Glory okafor, Onwuli Valentina, Ejibode Ibraheem, Francisca Chukwuka">
-  <meta name="desription" content="Glory okafor, Onwuli Valentina, Ejibode Ibraheem, Francisca Chukwuka">
-  <meta name="keyword" content="health,medical,donation,html,css,javascript">
-
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=
-  , initial-scale=1.0">
-  <title>DonoH Web App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
   <link rel="stylesheet" type="text/css" href="/Assets/CSS/admin_dashboard.css"  > 
+  <link rel="stylesheet" href="/Assets/CSS/index.css">
+  <link rel="stylesheet" href="/Assets/CSS/blog.css">
   <link rel="icon" href="/register/signup/images/logo.jpeg"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+    defer
+  ></script>
 </head>
-
 <body class="transparent">
   <div class="container-lg">
     <div class="card mt-2 border border-0 mb-5 bg-transparent" >
-     <nav class="navbar navbar-expand-lg ">
-        <div class="container-lg ">
-          <a class="navbar-brand" href="#">
-            <img src="/register/signup/images/logo.jpeg" alt="logo" class="img-fluid rounded-circle my-4 p-1 d-none d-md-block shadow w-50 ms-5  logo"/>
-            <!-- <img src="/register/signup/images/logo.jpeg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"> -->
-          </a>         
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <section class="w-100 fixed-top bg-white">
+        <nav class="navbar navbar-expand-lg w-90 mx-auto">
+          <div
+            class="w-100 d-lg-flex justify-content-lg-between align-items-lg-center"
+          >
+            <!-- logo and hamburger -->
+            <section
+              class="logo-hamburger d-flex align-items-center justify-content-between"
+            >
+              <div class="w-img">
+                <a
+                  href="/"
+                  class="navbar-brand"
+                  style="width: 100%; height: 100%"
+                >
+                  <img
+                    src="/Assets/images/donohh.png"
+                    alt="logo"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+              >
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-5">
-                  <a class="nav-link me-4" aria-current="page" href="#">Home</a>
-                  <a class="nav-link me-4" href="#">About Us</a>
-                  <a class="nav-link me-4" href="#">Contact Us</a>
-                  <a class="nav-link me-4" href="#">Blog</a>
-                  <a class="nav-link me-4" href="#">Privacy</a>
-                </div>
-                <button type="button" class="btn btn-outline-danger ">Sign in</button>
-                <button type="button" class="btn btn-danger">Sign up</button>
+            </section>
+
+            <!-- off canvas -->
+
+            <section
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div
+                class="offcanvas-header d-flex d-lg-none justify-content-end"
+              >
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
               </div>
-             
-            </div>      
-        </div>               
-      </nav>
-  </div>  
 
-      <div class="container-fluid bg-info">
-        <p class="fs-1 text-uppercase text-center text-light">Terms of Service</p>
-      </div>
+              <div
+                class="offcanvas-body w-custom-75 d-lg-flex justify-content-lg-end align-self-lg-end"
+              >
+                <div class="navigation-wrapper d-lg-flex w-100">
+                  <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active-link text-capitalize"
+                        aria-current="page"
+                        href="/"
+                        >home</a
+                      >
+                    </li>
 
-      <div class="container">
-        <p>
-          <b>TERMS AND CONDITIONS</b>
-        </p>
-          <p>
-          Prime Team Digital Solutions (referred to as us or we) is a business in Nigeria. We operate the website www.donoh.org (the Website)These are the Terms and
-          conditions which govern each use you make of the donation services provided through the Website. These Terms and Conditions apply separately to each single 
-          donation that you make. Except as specified by you, they do not form a contract allowing for future or successive transactions to be set up. By confirming on the 
-          website that you wish to make or receive a donation you agree to be bound by these Terms and Conditions for that donation.
-        </p>
-        <p>
-          <b>(1) The Donation Services</b>
-        </p>
-          <p>
-            We will use your donation strictly as you have specified. All payments through the Website are to be made by payment card or via PayPal.
-            Once you confirm to us through the Website that you wish to proceed with your donation your transaction will be processed through our payment services 
-            provider, Paystack. By confirming that you wish to proceed with your donation you authorize Paystack to request funds from your credit, debit, or PayPal card 
-            provider. Your payment will be charged 1% site maintenance fee.
-            All payments are irrevocable once transferred to the intended recipient.
-        </p>
+                    <li class="nav-item">
+                      <a class="nav-link text-capitalize" href="/AboutSection/About.html">about us</a>
+                    </li>
 
-        <p>
-          <b>2)Unauthorized Use of Card</b>
-        </p>
-          <p>
-            If you become aware of fraudulent use of your card, or if it is lost or stolen, you must notify your card provider.
-          </p>
+                    <li class="nav-item">
+                      <a class="nav-link text-capitalize" href="/contact-us/contact.html"
+                        >contact us</a
+                      >
+                    </li>
 
-        <p>
-          <b>(3) Your Information</b>
-        </p>
-          <p>
-            Before we can process a donation you must provide us with (i) your name, email address; and (ii) details of the credit or debit card that you wish to use to fund the
-            donation. We will use this information to process your donation. It is your responsibility to ensure you have provided us with the correct information.
-            When you submit your payment details, these details will be transferred to our payment provider Paystack and your payment data will be collected and processed 
-            securely by them. You should make sure that you are aware of Paystack's terms and conditions, which are different from our own, to ensure that you are
-            comfortable with how they will process your personal data before you make a donation. We won’t share your personal details with any other third party other than
-            is set out in our Privacy Policy.  Our Privacy Policy forms part of these Donation Payment Terms and Conditions. And by agreeing to these Terms and Conditions,
-            you are also agreeing to the way we use and protect your personal information in line with our Privacy Policy.
-          </p>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link text-capitalize"
+                        href="/blog_section/blog.html"
+                        >blog</a
+                      >
+                    </li>
 
-          <p>
-            <b>(4) Refund Policy</b>
-          </p>
-            <p>
-              If you make a donation in error, please contact us either by email at info@donoh.org, or by phone at +234 7066 362 982 within 24 hours and a full refund will be
-              made to you if it is confirmed the intended recipient has not been paid.
-            </p>
+                    <li class="nav-item">
+                      <a class="nav-link text-capitalize" href="/privacy_page/privacy.html">privacy</a>
+                    </li>
+                  </ul>
 
-            <p>
-              <b>(5) General</b>
-            </p>
-              <p>
-                We reserve the right to amend these Donation Payment Terms and Conditions at any time. These Donation Payment Terms and Conditions are governed by Laws
-                of The Federal Republic of Nigeria and are subject to the exclusive jurisdiction of the Nigerian courts.      
-              </p>
+                  <section
+                    class="button-wrapper justify-content-between d-lg-flex"
+                  >
+                    <div
+                      class="btn-1-wrapper border border-1 overflow-hidden mb-4 mb-lg-0"
+                    >
+                      <button class="btn w-100 h-100">
+                        <a class="nav-link text-capitalize" href="#">sign in</a>
+                      </button>
+                    </div>
 
-
-              <p>
-                <b>Disclaimer</b>
-              </p>
-                <p>
-                  DonoH as a Digital platform was developed to connect patients with kind hearted individuals/Organizations but has no connection with the general public who sign
-                  up for the sole purpose of providing or receiving this aid. Therefore, DonoH will not be held liable for any form of misappropriate use of information/data provided, 
-                  fraud or loss of funds due to transaction error, herein referred to as exploit.In an event of loss of life/lives of signed up member(s), DonoH reserves the right to 
-                  deactivate the account(s) with prior notice of 24 hrs from time of notification if there is no response from the user. Right to deactivate accounts suspected to be 
-                  involved in malicious activities intended to exploit the Organization shall be enforced with no prior notice and DonoH will not be held in contempt for this action.
-                  Patients are advised to seek alternative financial medical aid should they feel delayed response in an emergency situation as DonoH will not be held liable 
-                  for loss of lives misjudged as instilled confidence.
-                  DonoH will not respond to individuals who sign up on wrong accounts paraded as rendering the same service and will treat them as “Fair dealing” as
-                  mentioned under the Second Schedule to the Act of the Nigerian Copyright Act.
-                  Patients and Donors will at some points have testimonial interviews from DonoH and published on the website to encourage and attract more users to the platform.
-
-                </p>
-                <div class="gap-2 col-4 mx-auto mt-3 border border-0 ">
-                   <button type="button" class="btn btn-outline-danger me-4 ">Decline</button>
-                   <button type="button" class="btn btn-danger me-5">Accept</button>
+                    <div
+                      class="btn-2-wrapper bg-active-btn border border-1 overflow-hidden"
+                    >
+                      <button class="btn w-100 h-100">
+                        <a class="nav-link text-capitalize" href="#">sign up</a>
+                      </button>
+                    </div>
+                  </section>
                 </div>
+              </div>
+            </section>
+          </div>
+        </nav>
+      </section>
+  </div> 
+  </div>
 
-      </div>
+  <div class="container-fluid bg-info topStory">
+    <p class="fs-1 text-uppercase text-center text-light">Terms of Service</p>
+  </div>
+
+    <div class="container ">
+    <p>
+      <b>TERMS AND CONDITIONS</b>
+    </p>
+      <p>
+      Prime Team Digital Solutions (referred to as us or we) is a business in Nigeria. We operate the website www.donoh.org (the Website)These are the Terms and
+      conditions which govern each use you make of the donation services provided through the Website. These Terms and Conditions apply separately to each single 
+      donation that you make. Except as specified by you, they do not form a contract allowing for future or successive transactions to be set up. By confirming on the 
+      website that you wish to make or receive a donation you agree to be bound by these Terms and Conditions for that donation.
+    </p>
+    <p>
+      <b>(1) The Donation Services</b>
+    </p>
+      <p>
+        We will use your donation strictly as you have specified. All payments through the Website are to be made by payment card or via PayPal.
+        Once you confirm to us through the Website that you wish to proceed with your donation your transaction will be processed through our payment services 
+        provider, Paystack. By confirming that you wish to proceed with your donation you authorize Paystack to request funds from your credit, debit, or PayPal card 
+        provider. Your payment will be charged 1% site maintenance fee.
+        All payments are irrevocable once transferred to the intended recipient.
+    </p>
+
+    <p>
+      <b>2)Unauthorized Use of Card</b>
+    </p>
+      <p>
+        If you become aware of fraudulent use of your card, or if it is lost or stolen, you must notify your card provider.
+      </p>
+
+    <p>
+      <b>(3) Your Information</b>
+    </p>
+      <p>
+        Before we can process a donation you must provide us with (i) your name, email address; and (ii) details of the credit or debit card that you wish to use to fund the
+        donation. We will use this information to process your donation. It is your responsibility to ensure you have provided us with the correct information.
+        When you submit your payment details, these details will be transferred to our payment provider Paystack and your payment data will be collected and processed 
+        securely by them. You should make sure that you are aware of Paystack's terms and conditions, which are different from our own, to ensure that you are
+        comfortable with how they will process your personal data before you make a donation. We won’t share your personal details with any other third party other than
+        is set out in our Privacy Policy.  Our Privacy Policy forms part of these Donation Payment Terms and Conditions. And by agreeing to these Terms and Conditions,
+        you are also agreeing to the way we use and protect your personal information in line with our Privacy Policy.
+      </p>
+
+      <p>
+        <b>(4) Refund Policy</b>
+      </p>
+        <p>
+          If you make a donation in error, please contact us either by email at info@donoh.org, or by phone at +234 7066 362 982 within 24 hours and a full refund will be
+          made to you if it is confirmed the intended recipient has not been paid.
+        </p>
+
+        <p>
+          <b>(5) General</b>
+        </p>
+          <p>
+            We reserve the right to amend these Donation Payment Terms and Conditions at any time. These Donation Payment Terms and Conditions are governed by Laws
+            of The Federal Republic of Nigeria and are subject to the exclusive jurisdiction of the Nigerian courts.      
+          </p>
+
+
+          <p>
+            <b>Disclaimer</b>
+          </p>
+            <p>
+              DonoH as a Digital platform was developed to connect patients with kind hearted individuals/Organizations but has no connection with the general public who sign
+              up for the sole purpose of providing or receiving this aid. Therefore, DonoH will not be held liable for any form of misappropriate use of information/data provided, 
+              fraud or loss of funds due to transaction error, herein referred to as exploit.In an event of loss of life/lives of signed up member(s), DonoH reserves the right to 
+              deactivate the account(s) with prior notice of 24 hrs from time of notification if there is no response from the user. Right to deactivate accounts suspected to be 
+              involved in malicious activities intended to exploit the Organization shall be enforced with no prior notice and DonoH will not be held in contempt for this action.
+              Patients are advised to seek alternative financial medical aid should they feel delayed response in an emergency situation as DonoH will not be held liable 
+              for loss of lives misjudged as instilled confidence.
+              DonoH will not respond to individuals who sign up on wrong accounts paraded as rendering the same service and will treat them as “Fair dealing” as
+              mentioned under the Second Schedule to the Act of the Nigerian Copyright Act.
+              Patients and Donors will at some points have testimonial interviews from DonoH and published on the website to encourage and attract more users to the platform.
+
+            </p>
+            <div class="gap-2 col-4 mx-auto mt-3 border border-0 ">
+                <button type="button" class="btn btn-outline-danger me-4 ">Decline</button>
+                <button type="button" class="btn btn-danger me-5">Accept</button>
+            </div>
+    </div>
+
+
+    <footer class="bg-light-blue w-100 py-3 mt-4">
+      <section class="w-90 mx-auto text-white pt-5">
+        <h2 class="text-center w-100" style="font-weight: 500">
+          It is through giving that we live
+        </h2>
+        <h2 class="text-center w-100" style="font-weight: 500">
+          save a life today.
+        </h2>
+
+        <!-- btns -->
+        <div
+          class="btns mt-4 d-md-flex mx-auto justify-content-between align-items-center mb-4"
+        >
+          <div
+            class="btn-wrapper-2 border border-2 border-white bg-transparent mx-auto mt-4"
+          >
+            <a
+              href="#"
+              class="d-flex w-100 h-100 justify-content-center align-items-center text-decoration-none text-white text-capitalize"
+              style="font-size: 14px; font-weight: 500"
+              >seek&nbsp;<span class="text-lowercase">for&nbsp;</span> aid</a
+            >
+          </div>
+          <div class="btn-wrapper-2 bg-white mx-auto mt-4">
+            <a
+              href="#"
+              class="d-flex w-100 h-100 justify-content-center align-items-center text-decoration-none blue-span text-capitalize"
+              style="font-size: 14px; font-weight: 500"
+              >donate</a
+            >
+          </div>
+        </div>
+
+        <!-- footer navigation / quick links -->
+        <nav class="navbar mt-5 row mx-auto w-90 pt-4">
+          <div
+            class="nav-contents mt-4 col-sm-6 col-lg-3"
+            style="min-height: 278px"
+          >
+            <h5 class="text-white text-uppercase">navigation</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="/"
+                  >home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >about us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >contact us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="./blog_section/blog.html"
+                  >blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >donate</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="nav-contents mt-4 col-sm-6 col-lg-3"
+            style="min-height: 278px"
+          >
+            <h5 class="text-white text-uppercase">what we do</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >Supporting the sick
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >Strengthening Advocacy</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >Sharing Information</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >Building Leadership</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >Shining a Light</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="nav-contents mt-4 col-sm-6 col-lg-3"
+            style="min-height: 278px"
+          >
+            <h5 class="text-white text-uppercase">legal</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >general info</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >privacy policy</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >terms of service</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="nav-contents mt-4 col-sm-6 col-lg-3"
+            style="min-height: 278px"
+          >
+            <h5 class="text-white text-uppercase">talk to us</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="mailto:support@donoh.com"
+                  >support@donoh.com</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="tel:+2348129345495"
+                  >+(234)-812-9345-495</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >contact us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >Facebook</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >Linkedin</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >Twitter</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div
+          class="w-90 mx-auto my-5"
+          style="height: 2px; background-color: rgba(255, 255, 255, 0.3)"
+        ></div>
+
+        <section class="row mx-auto w-90 mt-1 py-1 justify-content-center">
+          <div class="w-50-custom col-sm-6 col-lg-4">
+            <figure class="m-0 p-0 white-logo">
+              <img
+                src="./Assets/images/DONOH-white.svg"
+                alt="donoh"
+                class="w-100 h-100"
+              />
+            </figure>
+          </div>
+
+          <div
+            class="col-sm-6 col-lg-4 d-flex align-items-end w-50-custom justify-content-sm-end justify-content-lg-center"
+          >
+            <p
+              class="text-white text-capitalize mb-0 w-100 text-sm-end font-sm"
+            >
+              © 2023 DonoH . All Rights Reserved.
+            </p>
+          </div>
+
+          <div
+            class="col-sm-6 mt-sm-4 mt-lg-0 col-lg-4 d-flex align-items-end justify-content-between justify-content-lg-end w-50-custom"
+          >
+            <a
+              href="#"
+              class="custom-a me-lg-3 text-white d-flex justify-content-center align-items-center text-decoration-none"
+            >
+              <i class="fab fa-facebook-f"></i></a
+            ><a
+              href="#"
+              class="custom-a me-lg-3 text-white d-flex justify-content-center align-items-center text-decoration-none"
+            >
+              <i class="fab fa-linkedin-in"></i></a
+            ><a
+              href="#"
+              class="custom-a text-white d-flex justify-content-center align-items-center text-decoration-none"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </section>
+      </section>
+    </footer>
+</body>
+</html>

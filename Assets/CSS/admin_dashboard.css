@@ -26,6 +26,9 @@
 .transparent{
   background-image: url(/register/signup/images/background.png);
 }
+.botn{
+  margin-left: 180px !important;
+}
 /* .asidey{
     height: 100% !important;
 } */

@@ -9,6 +9,18 @@
   --blue-light: #00b4d8;
 }
 
+::-webkit-scrollbar {
+  background-color: var(--blue-light);
+  width: 5px;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--active-link);
+  width: 100%;
+  border-radius: 20px;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -183,13 +195,35 @@ h2 {
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-
-
-.imgHandContainer{
+.imgHandContainer {
   height: 500px;
   width: 500px;
   border-radius: 50%;
   margin-left: 40px;
+}
+
+.mt-lg-custom {
+  margin-top: 60px;
+}
+
+.p-custom {
+  font-size: 10px !important;
+}
+
+.h2-custom {
+  font-size: 18px;
+}
+
+.h5-custom {
+  font-size: 14px !important;
+}
+
+.text-a-custom {
+  font-size: 12px !important;
+}
+
+.w-50-custom {
+  width: 150px;
 }
 
 @media (min-width: 500px) {
@@ -199,6 +233,10 @@ h2 {
 
   .btns {
     width: 400px;
+  }
+
+  .p-custom {
+    font-size: 12px !important;
   }
 }
 
@@ -218,6 +256,22 @@ h2 {
 
   .btns {
     width: 480px;
+  }
+
+  .p-custom {
+    font-size: 14px !important;
+  }
+
+  .h2-custom {
+    font-size: 22px !important;
+  }
+
+  .h5-custom {
+    font-size: 16px !important;
+  }
+
+  .text-a-custom {
+    font-size: 14px !important;
   }
 }
 
@@ -248,7 +302,11 @@ h2 {
   }
 
   .mt-lg-custom {
-    margin-top: 50px;
+    margin-top: 90px;
+  }
+
+  .p-custom {
+    font-size: 16px !important;
   }
 }
 

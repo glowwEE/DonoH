@@ -1,16 +1,14 @@
-.adminNav{
+.adminNav {
   width: 70% !important;
-  height:70px !important;
+  height: 70px !important;
   border-bottom: 1px solid black !important;
-  
 }
-.sidey{
-    margin-top:-60px !important;
-    top: 0px !important;
-    bottom: 0px !important;
-    position: absolute !important;
-    border-right: 1px solid black !important;
-    
+.sidey {
+  margin-top: -60px !important;
+  top: 0px !important;
+  bottom: 0px !important;
+  position: absolute !important;
+  border-right: 1px solid black !important;
 }
 
 .circle {
@@ -23,17 +21,18 @@
   justify-content: center !important;
   /* align-content: center !important;  */
 }
-.transparent{
-  background-image: url(/register/signup/images/background.png);
+.transparent {
+  background-image: url("/register/signup/images/background.png");
 }
-.botn{
+.botn {
   margin-left: 180px !important;
 }
-.up{
-  background-image:url(/register/signup/images/threehands.png);
+
+.up {
+  background-image: url("/register/signup/images/threehands.png");
   height: 400px;
 }
-.boda{
+.boda {
   background-color: #eceaea;
   /* border-width: 10px !important; */
 }

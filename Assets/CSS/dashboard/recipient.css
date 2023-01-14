@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  background-color: var(--blue-light);
+  width: 5px;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--active-link);
+  width: 100%;
+  border-radius: 20px;
+}
+
+:root {
+  --sidebar: #f8feff;
+  --active-link: #c32c31;
+  --blue-light: #00b4d8;
+  --font-color: #111010bf;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--font-color);
+}
+
+.active-link {
+  color: var(--active-link) !important;
+  font-size: 22px !important;
+}
+
+.text-14:not(.active-link) {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  color: var(--font-color) !important;
+}
+
+.nav-item {
+  margin-bottom: 20px !important;
+}
+
+.w-sidebar {
+  width: 80px;
+  background-color: var(--sidebar);
+}
+
+.w-page {
+  width: calc(100% - 80px);
+  left: 80px;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.w-85 {
+  width: 85%;
+}
+
+.w-custom-a {
+  width: 60px;
+  height: 50px;
+  background-image: url("../../images/donoh-logo.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.custom-shadow {
+  box-shadow: 0px 3px 3px rgba(76, 73, 73, 0.1);
+}
+
+.btn-wrapper {
+  width: 200px;
+  height: 45px;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: var(--active-link);
+  transition: 0.3s linear;
+}
+
+.btn-wrapper:hover {
+  background-color: transparent;
+}
+
+.btn-wrapper:hover .btn a {
+  color: var(--active-link);
+}
+
+.btn-wrapper .btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.mt-custom {
+  margin-top: 50px;
+}
+
+.text-blue-light {
+  color: var(--blue-light);
+}
+
+.w-75-custom {
+  width: 100%;
+}
+
+.input-group > .border-active {
+  border-color: var(--active-link) !important;
+}
+
+.bg-active {
+  background-color: var(--active-link) !important;
+  color: white !important;
+}
+
+@media (min-width: 600px) {
+  .w-sidebar {
+    width: 100px;
+  }
+
+  .w-page {
+    width: calc(100% - 100px);
+    left: 100px;
+  }
+
+  .w-custom-a {
+    width: 80px;
+  }
+
+  .w-75-custom {
+    width: 75%;
+  }
+}
+
+@media (min-width: 768px) {
+  .w-sidebar {
+    width: 150px;
+  }
+
+  .w-page {
+    width: calc(100% - 150px);
+    left: 150px;
+  }
+
+  .w-custom-a {
+    width: 100%;
+    background-image: url("../../images/text-logo.svg");
+  }
+
+  .active-link {
+    font-size: 15px !important;
+  }
+
+  .text-14:not(.active-link) {
+    font-size: 14px !important;
+  }
+
+  .w-md {
+    width: 200px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .w-sidebar {
+    width: 180px;
+  }
+
+  .w-page {
+    width: calc(100% - 180px);
+    left: 180px;
+  }
+
+  .mt-custom {
+    margin-top: 90px;
+  }
+}

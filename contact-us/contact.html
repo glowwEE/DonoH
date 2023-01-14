@@ -1,101 +1,234 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login Form</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="data:image/png;base64,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">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta
+      name="author"
+      content="Glory okafor, Onwuli Valentina, Ejibode Ibraheem, Francisca Chukwuka"
+    />
+    <meta
+      name="desription"
+      content="Glory okafor, Onwuli Valentina, Ejibode Ibraheem, Francisca Chukwuka"
+    />
+    <meta
+      name="keyword"
+      content="health,medical,donation,html,css,javascript"
+    />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+  , initial-scale=1.0"
+    />
+    <title>About Us page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Assets/CSS/index.css" />
+    <link rel="icon" href="/Assets/images/logo.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+      defer
+    ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-white sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img src="/IMG-20230108-WA0000.jpg" alt="" style="height: 55px"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a
-                class="nav-link active text-danger"
-                aria-current="page"
-                href="#home"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#About">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#blog">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#privacy">Privacy</a>
-            </li>
-          </ul>
-          <ul class="flex">
-            <button type="button" class="btn btn-outline-danger">
-              Sign in
-            </button>
-            <button type="button" class="btn btn-danger">Sign up</button>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- form -->
-
-    <div class="" style="text-align: center; margin-top: 25px;">
-       <h1>Contact Us</h1>
-                    <p>Any question or remarkd? Just write us a message!</p></div>
- <div class="row" >
-        <div class="card mt-5" >
-<div class="row g-0 ">
-              <div class="col-md-6 bg-primary">
- <h5 class="text-white fs-5 " style="text-align:center; margin-top: 20px;" >Contact Information</h5>
-                  <p class="text-white fs-5 " style="text-align:center;" >Say something to start a live chart!</p>
-                  <div class="d-flex flex-row text-white" style="text-align:center; margin-top: 100px;" >
-                    <img src="" alt="">
-                    <p >+2348123456789</p>
-                  </div>
-                  <div class="d-flex flex-row text-white" style="text-align:center;" >
-                  <img src="" alt="">
-                  <p >donoh@gmail.com</p>
-                </div>
-                <div class="d-flex flex-row text-white" style="text-align:center; " >
-                <img src="" alt="">
-                <p >132 Cresent Avenue Lekki<br> phase 1,Lagos State,Nigeria</p>
+    <main class="w-100 min-vh-100">
+      <section class="w-100 fixed-top bg-white">
+        <nav class="navbar navbar-expand-lg w-90 mx-auto">
+          <div
+            class="w-100 d-lg-flex justify-content-lg-between align-items-lg-center"
+          >
+            <!-- logo and hamburger -->
+            <section
+              class="logo-hamburger d-flex align-items-center justify-content-between"
+            >
+              <div class="w-img">
+                <a
+                  href="/"
+                  class="navbar-brand"
+                  style="width: 100%; height: 100%"
+                >
+                  <img
+                    src="/Assets/images/donohh.png"
+                    alt="logo"
+                    class="img-fluid"
+                  />
+                </a>
               </div>
-            </div>
+
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </section>
+
+            <!-- off canvas -->
+
+            <section
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div
+                class="offcanvas-header d-flex d-lg-none justify-content-end"
+              >
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div
+                class="offcanvas-body w-custom-75 d-lg-flex justify-content-lg-end align-self-lg-end"
+              >
+                <div class="navigation-wrapper d-lg-flex w-100">
+                  <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active-link text-capitalize"
+                        aria-current="page"
+                        href="/"
+                        >home</a
+                      >
+                    </li>
+
+                    <li class="nav-item">
+                      <a
+                        class="nav-link text-capitalize"
+                        href="/AboutSection/About.html"
+                        >about us</a
+                      >
+                    </li>
+
+                    <li class="nav-item">
+                      <a
+                        class="nav-link text-capitalize"
+                        href="/contact-us/contact.html"
+                        >contact us</a
+                      >
+                    </li>
+
+                    <li class="nav-item">
+                      <a
+                        class="nav-link text-capitalize"
+                        href="/blog_section/blog.html"
+                        >blog</a
+                      >
+                    </li>
+
+                    <li class="nav-item">
+                      <a
+                        class="nav-link text-capitalize"
+                        href="/privacy_page/privacy.html"
+                        >privacy</a
+                      >
+                    </li>
+                  </ul>
+
+                  <section
+                    class="button-wrapper justify-content-between d-lg-flex"
+                  >
+                    <div
+                      class="btn-1-wrapper border border-1 overflow-hidden mb-4 mb-lg-0"
+                    >
+                      <button class="btn w-100 h-100">
+                        <a class="nav-link text-capitalize" href="#">sign in</a>
+                      </button>
+                    </div>
+
+                    <div
+                      class="btn-2-wrapper bg-active-btn border border-1 overflow-hidden"
+                    >
+                      <button class="btn w-100 h-100">
+                        <a class="nav-link text-capitalize" href="#">sign up</a>
+                      </button>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </section>
+          </div>
+        </nav>
+      </section>
+
+     <section>
+       <div class="" style="text-align: center; margin-top: 85px;">
+        <h1>Contact Us</h1>
+        <p>Any question or remarks? Just write us a message!</p>
+        <div class="d-flex flex-row">
+            <section>
+              <div style="height: 647px; width: 491px; background-color: rgba(0, 180, 216, 1); margin-left: 103px; border-radius: 10px;">
+                <h5 class="text-white " style=" text-align:left;padding-top: 40px; padding-left: 40px;" ><strong>Contact Information</strong></h5>
+                <p class="text-white fs-5 " style=" text-align:left;padding-top: 10px; padding-left: 40px;" ><small>Say something to start a live chart!</small></p>
+               <div class="d-flex text-white" style="text-align:left; align-items: center; gap: 40px;padding-left: 40px; padding-top: 120px;" >
+                 <img src="../Assets/images/phone.svg" alt="phone">
+                 <p style="padding-top: 20px;">+2348123456789</p>
+               </div>
+               <div class="d-flex flex-row text-white" style="text-align:left; align-items: center; gap: 40px;padding-left: 40px; padding-top: 10px;" >
+               <img src="../Assets/images/mail.svg" alt="mail">
+               <p style="padding-top: 20px;">donoh@gmail.com</p>
+             </div>
+             <div class="d-flex flex-row text-white" style="text-align:left; align-items: center; gap: 40px; padding-left: 40px; padding-top: 10px;" >
+             <img src="../Assets/images/location.svg" alt="location">
+             <p style="padding-top: 20px;">132 Cresent Avenue Lekki<br> phase 1,Lagos State,Nigeria</p>
+             </div>
+             
+              <div class="d-flex bg-red" style="gap: 25px; padding-top: 80px; padding-left: 40px;">
+                <span style="border-radius: 50%; width: 40px; height: 40px; border: 0.5px solid #fff;">
+                  <img style="padding-top: 12px;" src="../Assets/images/facebook (2).svg" alt="">
+                </span>
+                <span style="border-radius: 50%; width: 40px; height: 40px; border: 0.5px solid #fff;">
+                  <img style="padding-top: 12px;" src="../Assets/images/inkedins.svg" alt="">
+  
+                <img  style="padding-top: 12px;"src="../Assets/images/Shape.svg" alt="">
+                  
+                </span>
+                <span style="border-radius: 50%; width: 40px; height: 40px; border: 0.5px solid #fff;">
+  
+                  <img style="padding-top: 12px;" src="../Assets/images/Twitter.svg" alt="">
+                </span>
+                
+              </div>
+            </section>
+
+            <section >
               <div class="col-md-6 ">
-                <div class="card-body h-100 bg-secondary bg-opacity-10 border border-0 ">
+                <div class=" d-flex flex-row card-body h-100 bg-secondary bg-opacity-10 border border-0 ">
                     <form class="p-5 mx-auto" name="myForm">
-                    <div class="mb-3 col-md-11">
-                      <label for="Email" class="form-label text-secondary">First Name</label>
-                      <div class= "card-text mb-4" style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center">
-                        <span class="fs-5 p-3 text-muted" style="background-color: #F3F5F6;">
-                        </span>
-                       </div>
+                    <div class=" mb-3 col-md-11">
+                      <label for="First" class="form-label text-secondary">First Name</label>
+                      <input type="text" id="First">
                     </div>
                     <div class="mb-3 col-md-11">
-                      <label for="Email" class="form-label text-secondary">Email</label>
-                      <div class= "card-text mb-4" style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center">
-                        <span class="fs-5 p-3 text-muted" style="background-color: #F3F5F6;">
-                       </span> 
+                      <label for="Email" class="form-label text-secondary">Last Name</label>
+                      <input type="text" id="Email">
                    <div class= "card-text mb-4" style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center">
                     <span class="fs-5 p-3 text-muted" style="background-color: #F3F5F6;">
                       
@@ -103,18 +236,289 @@
                   </div>
                   
                     </div>
-                    
-                    
-                    
-                <button id="btn" type="submit" class="btn btn-danger  d-grid gap-3 col-mx-auto mb-5">Send Message </button> 
+            </section>
+          
+        </div>        
+     </section>
 
-               
-              </div>
-            </div>
-          </div>
-    </div>
+    </main>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="./index.js"></script>
-  </body>
+    <footer class="bg-light-blue w-100 py-3 mt-4">
+      <section class="w-90 mx-auto text-white pt-5">
+        <h2 class="text-center w-100" style="font-weight: 500">
+          It is through giving that we live
+        </h2>
+        <h2 class="text-center w-100" style="font-weight: 500">
+          save a life today.
+        </h2>
+
+        <!-- btns -->
+        <div
+          class="btns mt-4 d-md-flex mx-auto justify-content-between align-items-center mb-4"
+        >
+          <div
+            class="btn-wrapper-2 border border-2 border-white bg-transparent mx-auto mt-4"
+          >
+            <a
+              href="#"
+              class="d-flex w-100 h-100 justify-content-center align-items-center text-decoration-none text-white text-capitalize"
+              style="font-size: 14px; font-weight: 500"
+              >seek&nbsp;<span class="text-lowercase">for&nbsp;</span> aid</a
+            >
+          </div>
+          <div class="btn-wrapper-2 bg-white mx-auto mt-4">
+            <a
+              href="#"
+              class="d-flex w-100 h-100 justify-content-center align-items-center text-decoration-none blue-span text-capitalize"
+              style="font-size: 14px; font-weight: 500"
+              >donate</a
+            >
+          </div>
+        </div>
+
+        <!-- footer navigation / quick links -->
+        <nav class="navbar mt-5 row mx-auto w-90 pt-4">
+          <div
+            class="nav-contents mt-4 col-sm-6 col-lg-3"
+            style="min-height: 278px"
+          >
+            <h5 class="text-white text-uppercase">navigation</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="/"
+                  >home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >about us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >contact us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="./blog_section/blog.html"
+                  >blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >donate</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="nav-contents mt-4 col-sm-6 col-lg-3"
+            style="min-height: 278px"
+          >
+            <h5 class="text-white text-uppercase">what we do</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >Supporting the sick
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >Strengthening Advocacy</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >Sharing Information</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >Building Leadership</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >Shining a Light</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="nav-contents mt-4 col-sm-6 col-lg-3"
+            style="min-height: 278px"
+          >
+            <h5 class="text-white text-uppercase">legal</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >general info</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >privacy policy</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >terms of service</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="nav-contents mt-4 col-sm-6 col-lg-3"
+            style="min-height: 278px"
+          >
+            <h5 class="text-white text-uppercase">talk to us</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="mailto:support@donoh.com"
+                  >support@donoh.com</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="tel:+2348129345495"
+                  >+(234)-812-9345-495</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >contact us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >Facebook</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >Linkedin</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link text-capitalize text-white px-0"
+                  style="font-weight: 200 !important"
+                  href="#"
+                  >Twitter</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div
+          class="w-90 mx-auto my-5"
+          style="height: 2px; background-color: rgba(255, 255, 255, 0.3)"
+        ></div>
+
+        <section class="row mx-auto w-90 mt-1 py-1 justify-content-center">
+          <div class="w-50-custom col-sm-6 col-lg-4">
+            <figure class="m-0 p-0 white-logo">
+              <img
+                src="./Assets/images/DONOH-white.svg"
+                alt="donoh"
+                class="w-100 h-100"
+              />
+            </figure>
+          </div>
+
+          <div
+            class="col-sm-6 col-lg-4 d-flex align-items-end w-50-custom justify-content-sm-end justify-content-lg-center"
+          >
+            <p
+              class="text-white text-capitalize mb-0 w-100 text-sm-end font-sm"
+            >
+              © 2023 DonoH . All Rights Reserved.
+            </p>
+          </div>
+
+          <div
+            class="col-sm-6 mt-sm-4 mt-lg-0 col-lg-4 d-flex align-items-end justify-content-between justify-content-lg-end w-50-custom"
+          >
+            <a
+              href="#"
+              class="custom-a me-lg-3 text-white d-flex justify-content-center align-items-center text-decoration-none"
+            >
+              <i class="fab fa-facebook-f"></i></a
+            ><a
+              href="#"
+              class="custom-a me-lg-3 text-white d-flex justify-content-center align-items-center text-decoration-none"
+            >
+              <i class="fab fa-linkedin-in"></i></a
+            ><a
+              href="#"
+              class="custom-a text-white d-flex justify-content-center align-items-center text-decoration-none"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </section>
+      </section>
+    </footer>
+
+    </footer>
+      
+    </body>
 </html>
